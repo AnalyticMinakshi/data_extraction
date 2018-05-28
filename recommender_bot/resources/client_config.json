@@ -1,0 +1,25 @@
+{
+	"allowed_domain" : [
+		"grofers.com"
+	],
+	"start_urls" : [
+		"https://grofers.com/"
+	],
+	"client_config" : 
+	{
+		"grofers_configuration" : 
+		{
+			"category_urls" : "//div[@class=\"category-slider\"]/div/div/div/a/@href",
+			"items_list" : "//*[@id=\"app\"]/div/div[2]/div[4]/div/div/div[2]/div[1]/div/div/div/div/div[2]/div[2]/div[1]/a/@href",
+			"items" : 
+			{
+				"category_name" : "//div[@class=\"category-slider\"]/div/div/div/a[%s]/div[@class=\"category-slider__category-text\"]/text()",
+				"item_name" : "//div[@class=\"products products--grid\"]/a[%s]/div/div[@class=\"plp-product__name \"]/div/text()",
+				"quantity" : "//div[@class=\"products products--grid\"]/a[%s]/div/div[@class=\"plp-product__quantity\"]/@title",
+				"price" : "//div[@class=\"products products--grid\"]/a[%s]/div/div[@class=\"plp-product__price\"]/div/div[@class=\"display--inline-block@mobile\"]/span/text()",
+				"offer" : "//div[@class=\"products products--grid\"]/a[%s]/div/div[@class=\"plp-product__offer\"]/text()",
+				"old_price" : 	"//div[@class=\"products products--grid\"]/a[%s]/div/div[@class=\"plp-product__price\"]/div/div[@class=\"plp-product__price--old display--inline-block@mobile\"]/text()"
+			}
+		}
+	}
+}
